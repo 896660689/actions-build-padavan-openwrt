@@ -79,6 +79,7 @@ echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >> .config   # SCUT校园网客户�
 
 # Default
 
+sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
 ### Include OpenSSH instead of dropbear. openssl ~1.2MB, openssh ~1.0MB
 echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
 
